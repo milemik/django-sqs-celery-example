@@ -1,0 +1,19 @@
+<h4>{{ awsuser }}</h4>
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
+<form action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+    <label for="input_field">Enter something</label>
+    <input id="input_field" type="text" name="input_field">
+    <input type="submit" value="OK">
+</form>
+
+<div>
+    <h2>user inputs</h2>
+    {% if user_inputs %}
+        {% for user_input in user_inputs %}
+            <p>{{ user_input.name }}: {{ user_input.create_time }}</p>
+        {% endfor %}
+    {% endif %}
+</div>

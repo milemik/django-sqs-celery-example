@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "djangosqscel"
+version = "0.1.0"
+description = ""
+authors = ["milemik <milemik68@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.5"
+celery = "^5.2.7"
+boto3 = "^1.24.16"
+pycurl = "^7.45.1"
+django-celery-beat = "^2.3.0"
+tzdata = "^2022.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
