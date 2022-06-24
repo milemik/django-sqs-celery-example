@@ -24,4 +24,6 @@ This is just a basic example of how to set up django with celery and SQS as a br
    ```
 5. Open your browser and go to http://localhost:8000/ and test. 
 You should see running tasks in your terminal logs, and events in AWS SQS
-   
+
+
+NOTE: Since this is just an example and very simple app, I didn't add tests. :)
